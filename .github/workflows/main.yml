@@ -18,3 +18,7 @@ jobs:
         #   start: npm start
       - name: Cypress i
         run: npm install cypress --save-dev
+      - name: Cypress.io
+        uses: cypress-io/github-action@v4
+        with: 
+          start: npm start
