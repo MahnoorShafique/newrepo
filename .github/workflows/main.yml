@@ -9,6 +9,9 @@ jobs:
       - name: Setup npm package
         run: npm init -y && npm install
       - name: Cypress.io
-        uses: cypress-io/github-action@v2
-        with: 
-          start: npm start
+        uses: cypress-io/github-action@v4
+        with:
+         command: npx cypress run
+         browser: chrome
+        # with: 
+        #   start: npm start
