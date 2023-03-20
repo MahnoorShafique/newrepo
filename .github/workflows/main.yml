@@ -5,16 +5,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: pwd
-        run: |
-          pwd
-          ls
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
+        uses: actions/checkout@v2.3.4
+      - name: Setup npm package
+        run: sudo apt-get install -y npm
+#         run: npm init -y && npm install
+      - name: Cypress.io
+        uses: cypress-io/github-action@v4
         with:
-          project: ./newrepo/newrepo/cypress
-
+         command: npx cypress run
+         browser: chrome
+    #------------------
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#       - name: pwd
+#         run: |
+#           pwd
+#           ls
+#       - name: Cypress run
+#         uses: cypress-io/github-action@v5
+#         with:
+#           project: ./newrepo/newrepo/cypress
+#---------------------------------------------------
 #       - name: Checkout
 #         uses: actions/checkout@v2
 #       - name: Install node
@@ -30,16 +41,7 @@ jobs:
 #       - name: Cypress run
 #         uses: cypress-io/github-action@v2
      
-#       - name: Checkout
-#         uses: actions/checkout@v2.3.4
-#       - name: Setup npm package
-#         run: sudo apt-get install -y npm
-                  # run: npm init -y && npm install
-                # - name: Cypress.io
-                #   uses: cypress-io/github-action@v4
-                #   with:
-                #    command: npx cypress run
-                #    browser: chrome
+
                   # with: 
                   #   start: npm start
 #       - name: Cypress i
