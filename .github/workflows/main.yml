@@ -21,5 +21,5 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@v4
         with: 
-          command: npx cypress run
+          command: npx cypress open
           browser: chrome
