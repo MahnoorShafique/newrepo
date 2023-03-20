@@ -5,18 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
-      - name: Setup npm package
-        run: sudo apt-get install -y npm
-#         run: npm init -y && npm install
-      - name: abey chal ja.
-        run: |
-         pwd
-         ls
-      - name: Install Cypress
-        run: npm install cypress
-      - name: Run Cypress
-        run: npx cypress open
+        uses: actions/checkout@v2
+      - name: Install node
+        uses: actions/setup-node@v2
+        with:
+           node-version: '14'
+      - name: Install dependencies
+        run: npm install
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+
 #       - name: Cypress.io
 #         uses: cypress-io/github-action@v4
 #         with:
@@ -34,6 +32,21 @@ jobs:
 #         with:
 #           project: ./newrepo/newrepo/cypress
 #---------------------------------------------------
+#2  run infinitley
+#       - name: Checkout
+#         uses: actions/checkout@v2.3.4
+#       - name: Setup npm package
+#         run: sudo apt-get install -y npm
+# #         run: npm init -y && npm install
+#       - name: abey chal ja.
+#         run: |
+#          pwd
+#          ls
+#       - name: Install Cypress
+#         run: npm install cypress
+#       - name: Run Cypress
+#         run: npx cypress open
+# ----------------------------------------
 #       - name: Checkout
 #         uses: actions/checkout@v2
 #       - name: Install node
