@@ -13,11 +13,15 @@ jobs:
         run: |
          pwd
          ls
-      - name: Cypress.io
-        uses: cypress-io/github-action@v4
-        with:
-         command: npx cypress run
-         browser: chrome
+      - name: Install Cypress
+        run: npm install cypress --save-dev
+      - name: Run Cypress
+        run: npx cypress run
+#       - name: Cypress.io
+#         uses: cypress-io/github-action@v4
+#         with:
+#          command: npx cypress run
+#          browser: chrome
     #------------------
 #       - name: Checkout
 #         uses: actions/checkout@v3
