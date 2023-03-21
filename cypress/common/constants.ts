@@ -11,7 +11,7 @@ export class Constants {
     continueUsingForFree =  'CONTINUE USING FOR FREE';
     pakistanCountryCode = '+92';
     signInText = 'Sign in';
-    newNumber = '3064743751';
+    newNumber = '3028931858';
     userName = 'Automation User';
     role = [
         "School Owner/Admin",
