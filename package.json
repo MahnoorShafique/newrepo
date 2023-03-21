@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "taleemabadRun": "npm run cypress:test",
+    "cypress:test": "cypress run",
+    "e2e-dashboard": "cypress run --headed --browser chrome --record --key 4aaa4d25-5d49-4d6f-aa50-20c20ce6d92e",
+    "e2e": "cypress run --headed --browser chrome",
+    "merge-reports": "npx mochawesome-merge ./cypress/report/*.json > index.json",
+    "generate-htmlreport": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "cypress-parallel": "^0.9.1",
+    "mochawesome-merge": "^4.2.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "cypress": "^12.8.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
