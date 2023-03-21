@@ -71,13 +71,13 @@ export class Constants {
     exploreTeacherTraining = 'Explore Teacher Training';
 
     //API related constants
-    apiBaseUrl1 = "https://stage.taleemabad.com/";
-    apiBaseUrl = "https://stage.taleemabad.com/auth/";
-    contentApiBaseUrl = "https://stage.taleemabad.com/content/apis/"
-    apiSecretKey = "taleemabad123";
-    deleteApi = "delete-user";
-    deleteLessonPlanStatusApi = "lesson-plan-status-delete";
-    newNumberForAPI = "+923338617165";
+    // apiBaseUrl1 = "https://stage.taleemabad.com/";
+    // apiBaseUrl = "https://stage.taleemabad.com/auth/";
+    // contentApiBaseUrl = "https://stage.taleemabad.com/content/apis/"
+    // apiSecretKey = "taleemabad123";
+    // deleteApi = "delete-user";
+    // deleteLessonPlanStatusApi = "lesson-plan-status-delete";
+    // newNumberForAPI = "+923338617165";
 
     myClasses = 'My Classes';
     classAssignedToTeacher = 'PG-A-English';
