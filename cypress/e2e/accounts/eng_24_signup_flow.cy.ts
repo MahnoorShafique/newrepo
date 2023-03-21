@@ -15,12 +15,12 @@ describe('[ENG-24] Signup Flow', function()
         cy.log("Verified that system Show a message ‘Enter your phone number to begin using Taleemabad");
         signupPage.enterPhoneNumber(constants.adminNumber);
         cy.log("Verified that user enter a phone number in text field.");
-        // signupPage.verifyCountryPicker();
-        // cy.log("Verified that country picker exists");
+        signupPage.verifyCountryflag();
+        cy.log("Verified that country flag exists");
         // signupPage.verifyCountryPickerIsPakistan();
         // cy.log("Verified that country picker is by default Pakistan");
-        // signupPage.verifyCountryPickerIsDisabled();
-        // cy.log("Verified that user should not be able to edit country code.");
+        signupPage.verifyCountryPickerIsDisabled();
+        cy.log("Verified that user should not be able to edit country code.");
         signupPage.verifyBeginText();
         cy.log("Checked that button 'Begin' is functional and as per design.");
         signupPage.verifyAlreadySignupUserGetSignInOption(constants.adminNumber);

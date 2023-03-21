@@ -62,7 +62,7 @@ export class SignupPage extends BasePage
     /**
      * verify that country picker exists
      */
-    verifyCountryPicker()
+    verifyCountryflag()
     {
         this.verifyElementExist(this.signupSelector.countryPicker)
     }
