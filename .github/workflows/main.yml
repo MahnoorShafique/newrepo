@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - uses: actions/checkout@v2
+       - name: pwd
+         run: |
+            pwd
+            ls
        - uses: cypress-io/github-action@v5
          with:
            browser: chrome
