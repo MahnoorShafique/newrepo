@@ -4,7 +4,7 @@ export class SignupPageSelectors {
     signInButton = '.signinButton';
     passwordField ='[type=password]';
     signupScreenText = 'span[class="description"]'
-    countryPicker = 'section[id="PhoneFlag"]'
+    countryPicker = '.pakistani-flag'
     pakistanSelectedOnCountryPicker = '.iti__pk'
     countryCode = 'span[class*="ng-tns"][class*="star-inserted"]'
     taleemabadForSchoolText = 'span[class*="taleemabadSchools"]'
